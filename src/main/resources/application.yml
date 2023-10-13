@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: demo
+
+# See https://docs.micronaut.io/latest/guide/#jsonBinding for more Jackson configuration options.
+jackson:
+  mapper:
+    acceptCaseInsensitiveProperties: true
+  serialization-inclusion: NON_ABSENT
+  deserialization:
+    failOnUnknownProperties: true
+    failOnInvalidSubtype: true
+    failOnIgnoredProperties: true
+    acceptSingleValueAsArray: false
+    acceptFloatAsInt: false
+  serialization:
+    writeDatesAsTimestamps: false
